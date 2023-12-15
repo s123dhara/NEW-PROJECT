@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Specify a default font */
+    background-color: rgb(184, 203, 219);
+    background-image: url('./bgimg.jpg');
+    background-size: cover; /* This will make the image cover the entire body */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    position: fixed;
+    border: 1px solid black;
+    padding: 20px; /* Add some padding for better spacing */
+    margin: 20px; /* Add margin to separate the container from the edges of the page */
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgb(168, 204, 192); */
+    background: transparent;
+    box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.container .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Center the items horizontally */
+}
+.temp-1{
+    display: inline-block;
+    overflow-x: hidden;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+}
+.temp-1 input{
+    /* outline: none;
+    border: none; */
+    height: 30px;
+    width: 14rem;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    background: transparent;
+    box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.temp-1 input::placeholder {
+    color: #fff; /* Set the color you desire */
+}
+.temp-1 select{
+    box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+    /* background : transparent; */
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    margin-left: 35px;
+    left: 20px;
+    font-size: 16px;
+}
+.temp-1 option{
+    background: white;
+}
+
+h2, h3 {
+text-align: center ; /* Center-align the headings */
+color: white;
+text-shadow: 2px 3px black; ;
+}
+.details button {
+    /* outline: none;
+    border: none; */
+    color: white;
+    background: transparent;
+    margin-bottom: 10px;
+    height: 2rem; /* Add some vertical spacing between the input elements */
+    width: 8rem;
+    font-size: 16px;
+    box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.details button:hover{
+    color: aqua;
+
+}
+
+/* Medium devices (laptops and small desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        /* Example styles for medium devices go here */
+        font-size: 16px;
+        color: #333;
+    }
+
+    .container {
+        /* Example styles for the container on medium devices go here */
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .temp-1 input {
+        /* Example styles for input on medium devices go here */
+        width: 10rem;
+        font-size: 14px;
+    }
+
+    /* Add more styles as needed for other elements within this media query */
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        /* Example styles for small devices (tablets) go here */
+        font-size: 14px;
+        color: #444;
+    }
+
+    .container {
+        /* Example styles for the container on small devices go here */
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .temp-1 input {
+        /* Example styles for input on small devices go here */
+        width: 8rem;
+        font-size: 12px;
+    }
+
+    /* Add more styles as needed for other elements within this media query */
+}
+@media only screen and (max-width: 575.98px)  {
+    /* Styles for phones go here */
+    body {
+        /* Example styles for extra small devices (phones) go here */
+        font-size: 12px;
+        color: #666;
+    }
+
+    .container {
+        /* Example styles for the container on extra small devices go here */
+        width: 100%;
+        margin: 5px auto;
+    }
+    .temp-1{
+        display: flex;
+        overflow: hidden;
+    }
+
+    .temp-1 input {
+        /* Example styles for input on extra small devices go here */
+        width: 50%;
+        font-size: 14px;
+        height: 1.5rem;
+    }
+    .details button{
+        height: 1.8rem;
+        width: 7rem;
+        font-size: 14px;
+    }
+}
+
