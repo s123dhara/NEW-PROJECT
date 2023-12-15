@@ -21,12 +21,12 @@ function change() {
   // show.innerHTML = input
   if (selectedOption === "cel") {
     let f = (input*(9/5))+32
-    show.innerHTML = ` = °${f} Farenheit`
+    show.innerHTML = ` = °${f} hmm`
     show.style.color = 'white'
     // console.log(show)
   } else if(selectedOption==='fah') {
     let c = (input-32)*(5/9)
-    show.innerHTML = ` = °${c} Celcius`
+    show.innerHTML = ` = °${c} koi na`
     show.style.color = 'white'
     // console.log(show)
   }
